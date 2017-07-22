@@ -27,7 +27,7 @@ ec2-127-0-1-1.compute-1.amazonaws.com | FAILED! => {
 
 ```
 ansible all -m ping -i /etc/ansible/hosts 
-ec2-127-0-0-1.compute-1.amazonaws.com | SUCCESS => {
+ec2.compute-1.amazonaws.com | SUCCESS => {
     "changed": false, 
     "ping": "pong"
 }
@@ -35,6 +35,6 @@ ec2-127-0-0-1.compute-1.amazonaws.com | SUCCESS => {
 
 ```
 ansible all -a "/bin/echo hello" -i /etc/ansible/hosts 
-ec2-54-197-2-221.compute-1.amazonaws.com | SUCCESS | rc=0 >>
+ec2.compute-1.amazonaws.com | SUCCESS | rc=0 >>
 hello
 ```
