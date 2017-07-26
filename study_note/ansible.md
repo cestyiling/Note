@@ -11,6 +11,7 @@ ansible all -m ping -i /etc/ansible/hosts --key-file=~/.ssh/helloworld.pem -vvv
 
 Need to install python on the remote machine
 ```
+ansible {host_in_inventory} -m ping -i {inventory_file} --key-file=~/.ssh/xxx.pem 
 ansible all -m ping -i /etc/ansible/hosts --key-file=~/.ssh/xxx.pem 
 
 ec2-127-0-1-1.compute-1.amazonaws.com | FAILED! => {
