@@ -1,5 +1,3 @@
-http://docs.ansible.com/ansible/latest/intro_getting_started.html
-
 # Windows
 Windows Remote Management
 
