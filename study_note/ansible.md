@@ -10,8 +10,9 @@ ansible all -m ping -i /etc/ansible/hosts --key-file=~/.ssh/helloworld.pem -vvv
 - --key-file: with specific private key (or you could import your private key into remote machine)
 
 Need to install python on the remote machine
+> ansible {host_in_inventory} -m {command} -i {inventory_file} --key-file=~/.ssh/xxx.pem 
+
 ```
-ansible {host_in_inventory} -m ping -i {inventory_file} --key-file=~/.ssh/xxx.pem 
 ansible all -m ping -i /etc/ansible/hosts --key-file=~/.ssh/xxx.pem 
 
 ec2-127-0-1-1.compute-1.amazonaws.com | FAILED! => {
