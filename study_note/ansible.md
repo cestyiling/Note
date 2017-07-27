@@ -12,16 +12,11 @@ PS D:\> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 PS D:\> Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
-3. 
-```
-PS D:\> ConfigureRemotingForAnsible.ps1 -ForceNewSSLCert
-```
+3. To automate the setup of WinRM, you can run the ConfigureRemotingForAnsible.ps1 script on the remote machine in a PowerShell console as an administrator
 
-4. Create an HTTPS listener by typing the following command: 
 ```
-PS D:\> winrm quickconfig -transport:https. 
+PS D:\> ConfigureRemotingForAnsible.ps1
 ```
-Be aware that you must open port 5986 for HTTPS transport to work.
 
 ## Reference 
 [winrm](https://msdn.microsoft.com/en-us/library/aa384372(v=vs.85).aspx)
