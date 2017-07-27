@@ -1,7 +1,7 @@
 # Windows
 Windows Remote Management
 
-1. Add ACL
+1. Add ACL <Execute(Invoke)+Read(Get,Enumerate,Subscribe) >
 ```
 PS D:\> winrm configSDDL default
 ```
