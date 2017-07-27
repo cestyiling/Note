@@ -1,6 +1,35 @@
 # Windows
 Windows Remote Management
 
+1. Add ACL
+```
+PS D:\> winrm configSDDL default
+```
+
+2. Enable PowerShell remoting
+```
+PS D:\> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+PS D:\> Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+3. 
+```
+PS D:\> ConfigureRemotingForAnsible.ps1 -ForceNewSSLCert
+```
+[ConfigureRemotingForAnsible](https://github.com/ansible/ansible/blob/devel/examples/scripts/ConfigureRemotingForAnsible.ps1)
+
+4. Create an HTTPS listener by typing the following command: 
+```
+PS D:\> winrm quickconfig -transport:https. 
+```
+Be aware that you must open port 5986 for HTTPS transport to work.
+
+##
+Reference 
+[winrm](https://msdn.microsoft.com/en-us/library/aa384372(v=vs.85).aspx)
+
+
+
 # Linux
 
 ```
