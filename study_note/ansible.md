@@ -20,6 +20,7 @@ PS D:\> ConfigureRemotingForAnsible.ps1
 
 ## Reference 
 [winrm](https://msdn.microsoft.com/en-us/library/aa384372(v=vs.85).aspx)
+
 [ConfigureRemotingForAnsible](https://github.com/ansible/ansible/blob/devel/examples/scripts/ConfigureRemotingForAnsible.ps1)
 
 
