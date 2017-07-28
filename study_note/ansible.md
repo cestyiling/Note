@@ -23,6 +23,7 @@ PS D:\> ConfigureRemotingForAnsible.ps1
 
 [ConfigureRemotingForAnsible](https://github.com/ansible/ansible/blob/devel/examples/scripts/ConfigureRemotingForAnsible.ps1)
 
+[windows_modules](http://docs.ansible.com/ansible/latest/list_of_windows_modules.html)
 
 # Linux
 
