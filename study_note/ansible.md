@@ -62,3 +62,7 @@ ansible all -a "/bin/echo hello" -i /etc/ansible/hosts 
 ec2.compute-1.amazonaws.com | SUCCESS | rc=0 >>
 hello
 ```
+
+```
+ansible-playbook deploy-logstash_conf.yml --extra-vars "phase=alpha" -i inventory-beta -vvvv
+```
