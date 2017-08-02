@@ -68,3 +68,6 @@ hello
 ```
 ansible-playbook deploy-logstash_conf.yml --extra-vars "phase=alpha" -i inventory-beta -vvvv
 ```
+
+# Reference 
+[vault](http://docs.ansible.com/ansible/latest/playbooks_vault.html#encrypting-unencrypted-files)
