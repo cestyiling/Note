@@ -71,3 +71,7 @@ ansible-playbook deploy-logstash_conf.yml --extra-vars "phase=alpha" -i inventor
 
 # Reference 
 [vault](http://docs.ansible.com/ansible/latest/playbooks_vault.html#encrypting-unencrypted-files)
+
+# Issue
+[win_copy bug](https://groups.google.com/forum/#!topic/ansible-devel/rK85H7g7H3s)
+
